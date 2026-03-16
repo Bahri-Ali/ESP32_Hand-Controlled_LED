@@ -42,13 +42,13 @@ while cap.isOpened():
             if tip < mcp:
                 print("Status: OPEN -> LED ON")
                 try:
-                    ser.write(b'1')
+                    ser.write(b'0')
                 except:
                     pass
             else:
                 print("Status: CLOSED -> LED OFF")
                 try:
-                    ser.write(b'0')
+                    ser.write(b'1')
                 except:
                     pass
 
